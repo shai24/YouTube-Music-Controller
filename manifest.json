@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "YouTube Music Controller",
-  "version": "1.1",
-  "description": "Control YouTube Music with keyboard shortcuts (Alt+S for play/pause, Alt+P for previous, Alt+N for next).",
+  "version": "1.0",
+  "description": "Control YouTube Music with global keyboard shortcuts (Alt+S for play/pause, Alt+P for previous, Alt+N for next).",
   "icons": {
     "16": "YMC_icon_16.png",
     "48": "YMC_icon_48.png",
@@ -23,19 +23,22 @@
       "suggested_key": {
         "default": "Alt+S"
       },
-      "description": "Play or pause the current song."
+      "description": "Play or pause the current song.",
+      "global": true
     },
     "previous-track": {
       "suggested_key": {
         "default": "Alt+P"
       },
-      "description": "Go to the previous song."
+      "description": "Go to the previous song.",
+      "global": true
     },
     "next-track": {
       "suggested_key": {
         "default": "Alt+N"
       },
-      "description": "Skip to the next song."
+      "description": "Skip to the next song.",
+      "global": true
     }
   }
 }
