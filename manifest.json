@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Music Controller",
+  "version": "1.1",
+  "description": "Control YouTube Music with keyboard shortcuts (Alt+S for play/pause, Alt+P for previous, Alt+N for next).",
+  "icons": {
+    "16": "YMC_icon_16.png",
+    "48": "YMC_icon_48.png",
+    "128": "YMC_icon_128.png"
+  },
+  "permissions": [
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://music.youtube.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "toggle-play-pause": {
+      "suggested_key": {
+        "default": "Alt+S"
+      },
+      "description": "Play or pause the current song."
+    },
+    "previous-track": {
+      "suggested_key": {
+        "default": "Alt+P"
+      },
+      "description": "Go to the previous song."
+    },
+    "next-track": {
+      "suggested_key": {
+        "default": "Alt+N"
+      },
+      "description": "Skip to the next song."
+    }
+  }
+}
