@@ -30,7 +30,7 @@ if (window.hasInitializedYTMController) {
         case "toggle-play-pause":
           clickElement('#play-pause-button');
           break;
-        case "previous-track": // Added case for previous track
+        case "previous-track":
           clickElement('.previous-button');
           break;
         case "next-track":
@@ -38,7 +38,6 @@ if (window.hasInitializedYTMController) {
           break;
       }
     }
-    // This is good practice for message listeners.
-    return true;
+    // We removed "return true;" from here because we are not sending a response.
   });
 }
