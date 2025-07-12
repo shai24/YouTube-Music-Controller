@@ -12,4 +12,6 @@ Toggle the Developer mode switch in the top-right corner.
 Click Load unpacked (top-left).
 Select the folder containing your extension files.
 
+After that, open the Keyboard Shortcuts settings to define your shortcuts and ensure they are applied globally.
+
 The "YouTube Music Controller" extension will now appear in your extensions list and is ready to use.
