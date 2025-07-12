@@ -7,7 +7,7 @@
 async function executeActionInYTMTab(action) {
   // Find any tab that has the YouTube Music URL.
   const tabs = await chrome.tabs.query({
-    url: "https://music.youtube.com/*"
+    url: "*://music.youtube.com/*"
   });
 
   // If at least one YouTube Music tab is found...
